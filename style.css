@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 100%; /* This helps with rem scaling */
+    font-size: 100%; 
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 #scoreBox, #hiscoreBox {
-    font-size: 1.5rem; /* Use rem for responsive typography */
+    font-size: 1.5rem; 
     font-weight: bold;
     font-family: 'New Tegomin', serif;
 }
@@ -40,7 +40,6 @@ body {
     right: 1rem;
 }
 
-/* Make the board scale according to screen size */
 #board {
     background-color: black;
     width: 90vmin;
@@ -51,26 +50,22 @@ body {
     grid-template-columns: repeat(18, 1fr);
 }
 
-/* Snake head */
 .head {
     background-color: rgb(107, 197, 141);
     border: 2px solid rgb(34, 4, 34);
-    transform: scale(1.05); /* Slight increase for the head */
+    transform: scale(1.05); 
 }
 
-/* Snake body */
 .snake {
     background-color: rgb(107, 197, 141);
     border: 1px solid black;
 }
 
-/* Food */
 .food {
     background-color: red;
     border: 1px solid black;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     #scoreBox, #hiscoreBox {
         font-size: 1.2rem;

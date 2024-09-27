@@ -1,4 +1,4 @@
-// Game Constants & Variables
+
 let inputDir = { x: 0, y: 0 };
 const foodSound = new Audio('music/food.mp3');
 const gameOverSound = new Audio('music/gameover.mp3');
@@ -11,7 +11,6 @@ let snakeArr = [{ x: 13, y: 15 }];
 let food = { x: 6, y: 8 };
 let hiscoreval = 0;
 
-// Game Functions
 function main(ctime) {
     window.requestAnimationFrame(main);
     if ((ctime - lastPaintTime) / 1000 < 1 / speed) {
@@ -100,7 +99,6 @@ function gameEngine() {
     board.appendChild(foodElement);
 }
 
-// Main logic starts here
 let hiscore = localStorage.getItem("hiscore");
 if (hiscore === null) {
     hiscoreval = 0;
